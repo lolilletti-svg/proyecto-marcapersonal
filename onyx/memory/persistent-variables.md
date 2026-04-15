@@ -7,12 +7,15 @@
 - content_pillars: automatización de procesos manuales, eficiencia operativa, lecciones desde AP, herramientas prácticas, pensamiento de procesos transferible
 - no_go_topics: política, empresas empleadoras por nombre, métricas inventadas, vida personal
 - voice_preferences: profesional, clara, práctica, reflexiva, sin inflación, sin tono influencer
+- post_format_fixed: TODOS los posts llevan (1) emojis en bullets + 👉 insight + 💭 CTA, (2) imagen o video provista por Lucía. Sin excepciones. No publicar sin visual.
 - tools_used: Claude API, JavaScript, HTML, Excel, Bill.com, NetSuite, Make (a evaluar), Slack API, Google Sheets
 - weak_patterns_to_avoid: generalizaciones sin base real, métricas inventadas, frases corporativas vacías, tono de gurú
 - posting_frequency: LinkedIn 2x/semana | Substack 1x/2 semanas (Fase 1–2), 1x/semana (Fase 3+)
-- posting_time_optimal: 18:30 ART (21:30 UTC) — martes y jueves. Dato basado en métricas reales: Post #1 (18:30) tuvo 4.6x más impresiones que Post #2 (20:30). Evitar postear después de las 19:00 ART.
+- posting_time_optimal: 8:30am ART (11:30 UTC) — martes y jueves. Dato combinado: Post #1 (18:30) 4.6x más impresiones que Post #2 (20:30) + B2B LinkedIn best practice (mañana > tarde). Experimento activo: Post #3 viernes 17 abr 8:30am para validar.
 - linkedin_metrics_baseline: Post #1: 1326 imp, 877 alc, 2.79% eng | Post #2: 290 imp, 179 alc, 2.07% eng
-- audience_confirmed: AP specialists + finance ops con experiencia, enterprise (10k+ empleados), alcance internacional cuando el tema es universal
+- audience_confirmed: AP specialists + finance ops con experiencia, enterprise (10k+ empleados), alcance internacional cuando el tema es universal. Empresas que ya llegaron: EY, ExxonMobil, Air Liquide, Genpact, NetSuite.
+- comment_protocol: responder TODOS los comentarios en las primeras 2 horas post-publicación. No responder con "gracias" — responder con pregunta de vuelta o dato adicional.
+- substack_funnel: activar mención de Substack en Post #4 o #5. Sin menciones todavía.
 - zernio_status: MCP activo (uvx). Bug en posts_create → usar REST API directamente (POST luego PUT). Post #3 programado ID: 69debc75e13608bd119221f2
 - notion_workaround: Notion MCP no carga → usar REST API directo con token del settings.json
 - channels: LinkedIn (descubrimiento y visibilidad) + Substack (autoridad y profundidad)

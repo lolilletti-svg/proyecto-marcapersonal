@@ -1,0 +1,33 @@
+{
+  "project": "proyecto_marcapersonal",
+  "last_saved": "2026-04-15T13:30:00Z",
+  "session_date": "2026-04-15",
+  "key_files": [
+    "onyx/memory/posts/post-01 a post-07.md",
+    "onyx/memory/substack/substack-01 y 02.md",
+    "onyx/memory/logs/calendario-editorial.md",
+    "onyx/memory/logs/bitacora-sesiones.md",
+    "onyx/memory/persistent-variables.md",
+    ".cloudcode/state/checkpoint.md"
+  ],
+  "external_ids": {
+    "notion_db_posts_linkedin": "32e6e736-4ef7-81d3-8666-c3c54b5ba19e",
+    "notion_db_substack": "32e6e736-4ef7-8118-a183-cc34da56f593",
+    "notion_db_tareas": "32e6e736-4ef7-8112-a599-e5094206098b",
+    "zernio_linkedin_account": "69d6a5e27dea335c2bc875a4",
+    "zernio_post3_id": "69debc75e13608bd119221f2"
+  },
+  "open_decisions": [
+    "Screenshot app P1 para Post #4 (22 abr) — Lucía debe proveerla",
+    "Publicar Substack #1 el 24 abr",
+    "Rotar token de Notion (estuvo expuesto en commit)"
+  ],
+  "next_steps": [
+    "Correr /onyx-metrics y guardar output completo",
+    "Conseguir screenshot app P1 para Post #4",
+    "Post #3 sale automático viernes 17 abr 8:30am ART",
+    "Publicar Substack #1 el 24 abr",
+    "Preparar Post #4 con imagen (22 abr 8:30am ART)",
+    "Empezar P3 — Slack Bot para Supply"
+  ]
+}

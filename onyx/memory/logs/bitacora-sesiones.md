@@ -2,6 +2,39 @@
 
 ---
 
+## Sesión 2026-04-15 — Loom guion + Hook PreCompact
+
+**Qué se hizo:**
+
+1. **Mini guion Loom guardado en Notion:**
+   - Guion de 90s para demo de AP Reconciliation App (P1)
+   - Guardado en Notion DB Tareas: "Mini guion Loom — AP Reconciliation App (P1)"
+   - Etiquetado como Para Post #4 (22 abr), Proyecto P1, Tipo Contenido
+
+2. **Hook PreCompact configurado:**
+   - Creado `/Users/luciacamilletti/.claude/hooks/pre-compact-checkpoint.sh`
+   - Agregado `PreCompact` hook en `~/.claude/settings.json`
+   - El hook guarda checkpoint completo automáticamente antes de que Claude compacte el contexto
+   - Previene pérdida de contexto mid-session
+
+3. **Sistema dual de memoria clarificado (Opción B):**
+   - MemPalace = memoria semántica, largo plazo, searchable
+   - checkpoint .md = contexto operacional de sesión, se lee al arrancar
+   - No hay conflicto real — conviven sin pisarse
+
+**Estado al cerrar:**
+- Pre-compact hook: ✅ activo
+- Loom guion: ✅ guardado en Notion (ID: 3436e7364ef781ba97e4d5e54a1c4490)
+- Post #3: programado Zernio viernes 17 abr 8:30am ART
+
+**Próximos pasos:**
+1. Grabar el Loom (guion en Notion)
+2. Screenshot de la app P1 para Post #4 (22 abr)
+3. Verificar Post #3 publicado el viernes 17 abr
+4. Publicar Artículo Substack #1 el 24 abr
+
+---
+
 ## Sesión 2026-04-08 — Integración Zernio MCP
 
 **Qué se hizo:**
