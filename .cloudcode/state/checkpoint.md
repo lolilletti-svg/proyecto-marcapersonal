@@ -1,5 +1,5 @@
 ---
-last_updated: 2026-04-15T16:00:00Z
+last_updated: 2026-04-15T19:35:00Z
 project: proyecto_marcapersonal
 ---
 
@@ -14,6 +14,7 @@ Publicar contenido estratégico en LinkedIn (2x/semana) y Substack (1x/2 semanas
 - Horario óptimo de posteo: **8:30am ART** (basado en /onyx-metrics — NO 18:30, ese fue un error corregido)
 - Posts en inglés, con emojis en bullets + 👉 para insight + 💭 para CTA (patrón de Post #1 publicado)
 - Sistema dual de memoria: MemPalace (semántica/largo plazo) + checkpoint .md (operacional/sesión) — conviven sin conflicto (Opción B elegida)
+- `/cierre` slash command creado (15 abr): ejecuta protocolo completo de cierre en 5 pasos sin necesitar frases trigger
 
 ## ✅ Decisiones tomadas
 - Idioma LinkedIn: inglés siempre
@@ -23,6 +24,7 @@ Publicar contenido estratégico en LinkedIn (2x/semana) y Substack (1x/2 semanas
 - Copy: nunca reescribir sin aprobación
 - Sistema de memoria: Opción B — MemPalace + checkpoint .md coexisten sin pisarse
 - Hook PreCompact: activo en settings.json (guarda checkpoint antes de compactar automáticamente)
+- `/cierre`: usar para disparar el protocolo de cierre manualmente (sin necesitar decir "me voy")
 
 ## 📊 Análisis y estrategia
 **Métricas Posts #1 y #2:**

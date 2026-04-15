@@ -2,6 +2,42 @@
 
 ---
 
+## Sesión 2026-04-15 (tarde) — Métricas Posts 1+2 + /cierre command
+
+**Qué se hizo:**
+
+1. **Recuperación de métricas Posts #1 y #2:**
+   - Lucía pidió las métricas de sus primeros dos posts de LinkedIn
+   - Datos completos recuperados desde `bitacora-sesiones.md` y `checkpoint.md`
+   - Post #1: 1,326 imp | 2.79% eng | audiencia internacional (EY, ExxonMobil, Genpact)
+   - Post #2: 290 imp | 2.07% eng | audiencia local (BA 32%)
+
+2. **Protocolo de cierre consolidado en `/cierre`:**
+   - Lucía pidió el prompt completo del protocolo de cierre
+   - Se entregó el desglose de los 5 pasos y dónde vive cada uno
+   - Se creó `.claude/commands/cierre.md` con el flujo completo (memoria + bitácora + checkpoint + README + git push)
+   - Slash command disponible: `/cierre`
+
+3. **Stop hook MemPalace ejecutado:**
+   - Diary entry AAAK guardada
+   - Drawer `decisions` → `/cierre` command
+   - Drawer `metrics` → métricas Posts #1 y #2
+   - KG: `cierre_command → created_in → proyecto_marcapersonal` + `post1 → outperforms → post2`
+
+**Estado al cerrar:**
+- `/cierre` command: ✅ creado en `.claude/commands/cierre.md`
+- Métricas Posts 1+2: ✅ en MemPalace (diary + drawers)
+- Post #3: ✅ programado Zernio 17 abr 8:30am ART
+- MemPalace stop hook: ✅ activo y funcionando
+
+**Próximos pasos:**
+1. Grabar Loom demo P1 (guion en Notion: 3436e7364ef781ba97e4d5e54a1c4490)
+2. Verificar Post #3 publicado viernes 17 abr
+3. Screenshot app P1 para Post #4 (22 abr)
+4. Publicar Substack #1 el 24 abr
+
+---
+
 ## Sesión 2026-04-15 — Loom guion + Hook PreCompact
 
 **Qué se hizo:**

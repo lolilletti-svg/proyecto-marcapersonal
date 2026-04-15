@@ -22,7 +22,7 @@ proyecto_marcapersonal/
 │
 ├── .claude/
 │   ├── agents/onyx.md                 # Definición del agente Onyx
-│   └── commands/                      # Slash commands (10 comandos)
+│   └── commands/                      # Slash commands (11 comandos)
 │       ├── onyx-post.md
 │       ├── onyx-daily.md
 │       ├── onyx-strategy.md
@@ -32,7 +32,8 @@ proyecto_marcapersonal/
 │       ├── onyx-review.md
 │       ├── onyx-substack.md
 │       ├── onyx-reddit-research.md
-│       └── onyx-metrics.md
+│       ├── onyx-metrics.md
+│       └── cierre.md
 │
 ├── onyx/
 │   ├── context/
@@ -79,6 +80,7 @@ proyecto_marcapersonal/
 | `/onyx-substack` | Crear artículo completo para Substack |
 | `/onyx-reddit-research` | Investigación de audiencia en Reddit |
 | `/onyx-metrics` | Análisis de rendimiento de posts publicados |
+| `/cierre` | Protocolo completo de cierre de sesión (memoria + bitácora + checkpoint + git push) |
 
 ---
 
