@@ -118,26 +118,23 @@ Las skills están en `onyx/skills/linkedin-strategy/` y son invocadas automátic
 
 ## Integraciones
 
-### Notion MCP
-Sincronización directa con el workspace de Notion. Tres bases de datos activas:
-- **Tareas & Roadmap** — 37 tareas distribuidas en las 16 semanas
-- **Posts LinkedIn** — copy completo de los 4 posts de Fase 1
-- **Artículos Substack** — 3 artículos Fase 1–2
+### Notion
+Sincronización directa con el workspace de Notion via REST API (MCP no carga → workaround activo).
+- **Tareas & Roadmap** (ID: `32e6e736-4ef7-8112-a599-e5094206098b`)
+- **Posts LinkedIn** (ID: `32e6e736-4ef7-81d3-8666-c3c54b5ba19e`) — 7 posts P1+P2 con copy completo
+- **Artículos Substack** (ID: `32e6e736-4ef7-8118-a183-cc34da56f593`) — 2 artículos listos
 
-### Zernio (en setup)
-API unificada para LinkedIn y 13 redes más. Habilita:
-- Métricas de posts directamente desde Claude (impresiones, engagement, clicks)
-- Publicación y programación de posts sin salir de Claude Code
-- Best time to post basado en datos reales de la audiencia
-- Cierra el loop de `/onyx-metrics` con datos reales sin trabajo manual
-
-**Estado:** API key activa, LinkedIn conectado. Pendiente instalar `uv` para activar el MCP local.
-
-```bash
-# Para activar Zernio:
-curl -LsSf https://astral.sh/uv/install.sh | sh
-# Luego reiniciar Claude Code
-```
+### Zernio ✅ ACTIVO
+API unificada para LinkedIn y 13 redes más.
+- API key activa, LinkedIn conectado (account ID: `69d6a5e27dea335c2bc875a4`)
+- MCP activo via uvx
+- **Workaround activo:** bug en `posts_create` MCP → usar REST API directo
+  ```python
+  # 1. Crear draft
+  POST https://zernio.com/api/v1/posts
+  # 2. Convertir a scheduled
+  PUT https://zernio.com/api/v1/posts/{id}  con isDraft:false + scheduledFor
+  ```
 
 ### Onyx Bot (Telegram — pendiente deploy)
 Bot de Telegram que permite interactuar con Onyx fuera de Claude Code. Código completo en `onyx-bot/`. Deploy en Railway pendiente.
@@ -149,7 +146,7 @@ Bot de Telegram que permite interactuar con Onyx fuera de Claude Code. Código c
 | # | Proyecto | Estado | Semanas |
 |---|----------|--------|---------|
 | P1 | AP Reconciliation App — parsea statements de vendors, cruza contra Bill.com y NetSuite | ✅ Completo | 1–4 |
-| P2 | Vendor Email Automation — email semanal a vendors con Make + Gmail | En pipeline | 3–6 |
+| P2 | Vendor Statement Automation — Google Apps Script (Mail.gs + DriveSync.gs + Code.gs) | ✅ Completo | 3–6 |
 | P3 | Slack Bot para Supply — intake estructurado + resumen automático lunes | En pipeline | 5–9 |
 | P4 | Invoice Ingestion automática — parsea mails de vendors hacia Sheet central | En pipeline | 8–12 |
 | P5 | Post-close Reporting Integration — reporte automático con trigger | En pipeline | 11–14 |

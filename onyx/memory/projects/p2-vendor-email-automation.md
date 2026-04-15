@@ -1,54 +1,53 @@
-# Proyecto 2 — Vendor Email Automation
+# Proyecto 2 — Vendor Statement Request Automation
 
-**Estado:** Por empezar
-**Timeline:** Semanas 3–6
+**Estado:** COMPLETADO
+**Timeline:** Semanas 1–3 (completado junto a P1)
 **Proof of work:** #2
+**Herramientas:** Google Apps Script, Gmail, Google Sheets
 
 ---
 
 ## Problema
 
-Email semanal de seguimiento a vendors (cada jueves) es manual:
-- Redacción repetitiva con variaciones mínimas
-- Tiempo dedicado a personalización básica (nombre, número, monto)
-- Sin log de quién respondió, quién no, y qué dijo
-- Coordinación reactiva en lugar de sistemática
+Para correr la reconciliación de vendors (P1), primero necesitás los updated statements de cada vendor. Antes:
+- Solicitud manual a cada vendor por mail
+- Sin trigger sistemático — dependía de que alguien se acordara
+- Sin tracking de quién respondió y quién no
+- Proceso desconectado de la app de reconciliación
 
-## Solución objetivo
+## Solución construida
 
-MVP: automatización del envío del mail de los jueves + log de respuestas:
-- Trigger semanal (jueves)
-- Template con campos variables (vendor, factura, monto, fecha)
-- Envío automático desde Gmail/Outlook
-- Log de respuestas en Google Sheets o similar
+Script de Google Apps Script vinculado a Gmail que:
+- Se ejecuta automáticamente los lunes
+- Envía emails a vendors solicitando su updated statement de la semana
+- Los statements que llegan de respuesta son exactamente los archivos que entran a la AP Reconciliation App (P1)
 
-## Herramientas (a definir)
+## Integración con P1
 
-- Make (recomendado sobre Zapier — más flexible para flujos AP)
-- Gmail o Outlook (según entorno laboral)
-- Google Sheets (log de tracking)
+P2 → P1 forman un workflow completo:
+1. Lunes: script envía emails automáticos a vendors pidiendo updated statements
+2. Vendors responden con statements (PDF o Excel)
+3. Esos statements son el input de la AP Reconciliation App
+4. La app parsea, cruza contra Bill.com/NetSuite, exporta resultado
 
-## Impacto esperado
+## Insight clave (para posts y Substack)
 
-- Eliminar tiempo de redacción y envío manual
-- Crear registro estructurado de comunicaciones con vendors
-- Reducir seguimientos perdidos o duplicados
+No son dos proyectos separados — es un pipeline. P2 genera el input que P1 procesa.
+Esto hace la narrativa más poderosa: automatizaste el ciclo completo de reconciliación,
+no solo una parte.
 
-## Insight clave (para posts)
+## Contenido planificado (actualizado)
 
-El proceso antes: reactivo, sin log, dependiente de memoria.
-El proceso después: sistemático, registrado, replicable.
+- Post: "El script que prepara el trabajo para mi app de reconciliación" (P2 como upstream de P1)
+- Post ángulo workflow: "Así se ve el pipeline completo: de email automático a reporte de reconciliación"
+- Substack: P2 + P1 como caso de estudio de un workflow end-to-end
+- Ángulo para entrevistas: "automaticé el ciclo completo — solicitud de statements + reconciliación"
 
-## Contenido planificado (fase 2)
+## Detalles técnicos (a documentar)
 
-- Case study: "Cómo automaticé la comunicación semanal con vendors"
-- Post de error: "El error que cometí en mi primera automatización de emails"
-- Post antes/después: "3 horas vs 20 minutos"
-
-## Pendientes
-
-- [ ] Mapear flujo actual del mail: a quiénes, qué dice, qué varía
-- [ ] Elegir Make o script (recomendación: Make para MVP)
-- [ ] Armar template base
-- [ ] Configurar trigger + log
-- [ ] Probar con un vendor antes de escalar
+- [ ] Nombre exacto del script en Google Apps Script
+- [ ] Trigger: lunes a qué hora
+- [ ] Lista de vendors incluidos
+- [ ] Template del email que se envía
+- [ ] Cómo llegan los statements (adjunto? body? formato?)
+- [ ] Subir a GitHub como parte del portfolio

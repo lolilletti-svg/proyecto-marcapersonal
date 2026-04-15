@@ -1,0 +1,25 @@
+wing: proyecto_marcapersonal
+rooms:
+- name: onyx_bot
+  description: Files from onyx-bot/
+  keywords:
+  - onyx_bot
+  - onyx-bot
+- name: onyx
+  description: Files from onyx/
+  keywords:
+  - onyx
+  - onyx
+- name: p1_reconciliation_app
+  description: Files from p1-reconciliation-app/
+  keywords:
+  - p1_reconciliation_app
+  - p1-reconciliation-app
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

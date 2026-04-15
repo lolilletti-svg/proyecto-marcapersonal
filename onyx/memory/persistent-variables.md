@@ -10,6 +10,11 @@
 - tools_used: Claude API, JavaScript, HTML, Excel, Bill.com, NetSuite, Make (a evaluar), Slack API, Google Sheets
 - weak_patterns_to_avoid: generalizaciones sin base real, métricas inventadas, frases corporativas vacías, tono de gurú
 - posting_frequency: LinkedIn 2x/semana | Substack 1x/2 semanas (Fase 1–2), 1x/semana (Fase 3+)
+- posting_time_optimal: 18:30 ART (21:30 UTC) — martes y jueves. Dato basado en métricas reales: Post #1 (18:30) tuvo 4.6x más impresiones que Post #2 (20:30). Evitar postear después de las 19:00 ART.
+- linkedin_metrics_baseline: Post #1: 1326 imp, 877 alc, 2.79% eng | Post #2: 290 imp, 179 alc, 2.07% eng
+- audience_confirmed: AP specialists + finance ops con experiencia, enterprise (10k+ empleados), alcance internacional cuando el tema es universal
+- zernio_status: MCP activo (uvx). Bug en posts_create → usar REST API directamente (POST luego PUT). Post #3 programado ID: 69debc75e13608bd119221f2
+- notion_workaround: Notion MCP no carga → usar REST API directo con token del settings.json
 - channels: LinkedIn (descubrimiento y visibilidad) + Substack (autoridad y profundidad)
 - substack_cadence: Fase 1–2: 1 artículo cada 2 semanas | Fase 3+: 1 artículo por semana
 - reddit_research_cadence: 1 sesión cada 2 semanas — subreddits: r/Accounting, r/excel, r/nocode, r/automation, r/sysadmin, r/smallbusiness, r/FinancialCareers
@@ -20,15 +25,15 @@
 
 ## Proyectos activos (roadmap 16 semanas)
 
-### Proyecto 1 — AP Reconciliation App (COMPLETADO — pulir semanas 1–2)
+### Proyecto 1 — AP Reconciliation App (COMPLETADO)
 - Herramientas: Claude API, JavaScript, HTML, Excel
-- Estado: construida, funciona — falta documentación, demo, GitHub
+- Estado: construida, funciona — Posts #1 (publicado) y #2 (publicado) en LinkedIn. Posts #3 y #4 programados.
 - Proof of work #1 — ancla de toda la narrativa
 
-### Proyecto 2 — Vendor Email Automation (semanas 3–6)
-- Herramientas: Make o script, Gmail/Outlook
-- Objetivo: automatizar email semanal de jueves a vendors
-- Estado: por empezar
+### Proyecto 2 — Vendor Statement Automation (COMPLETADO)
+- Herramientas: Google Apps Script (Mail.gs, DriveSync.gs, Code.gs)
+- Estado: en producción — envía emails lunes 8am, sincroniza Drive, genera tab Current
+- Posts #5, #6, #7 listos en Notion y Zernio. Artículo Substack #2 borrador listo.
 
 ### Proyecto 3 — Slack Bot para Supply (semanas 5–9)
 - Herramientas: Slack API, Google Sheets o Airtable

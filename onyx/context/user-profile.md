@@ -47,9 +47,11 @@ consolida múltiples ubicaciones, normaliza números de factura, exporta resulta
 Reemplazó proceso manual con tabs de Excel apiladas, vlookups rotos y conversión a mano.
 → Post #1 de la serie. Proof of work ancla.
 
-### Proyecto 2 — Vendor Email Automation (semanas 3–6)
-Automatización del mail semanal de jueves a vendors.
-Herramientas: Make o script + Gmail/Outlook.
+### Proyecto 2 — Vendor Statement Request Automation (COMPLETADO — semanas 1–3)
+Script de Google Apps Script que se ejecuta automáticamente los lunes y envía emails a vendors solicitando updated statements.
+Los statements que llegan como respuesta son el input directo de la AP Reconciliation App (P1).
+P2 + P1 forman un pipeline completo: solicitud automática → statement → reconciliación automática.
+Herramientas: Google Apps Script, Gmail, Google Sheets.
 
 ### Proyecto 3 — Slack Bot para Supply (semanas 5–9)
 Formulario de intake estructurado para equipo de Supply vía Slack.

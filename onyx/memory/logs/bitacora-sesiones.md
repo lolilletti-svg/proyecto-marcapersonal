@@ -303,3 +303,55 @@ cd /Users/luciacamilletti/Documents/claude_code/proyecto_marcapersonal/onyx-bot
 2. Documentar P1: README, comentarios en el código, grabar demo corto
 3. Subir P1 a GitHub
 4. Arrancar P2 (email automation con Make)
+
+---
+
+## Sesión 2026-04-14
+
+**Qué se hizo:**
+
+1. **Notion sincronizado via REST API** (Notion MCP no carga — workaround directo):
+   - Posts LinkedIn (#5, #6, #7) creados en Notion DB con copy completo, hook, CTA, fecha
+   - Cleanup DB: 4 posts duplicados/obsoletos archivados, fechas P1 actualizadas (Post #3 → 17 abr, Post #4 → 22 abr)
+   - Substack: 1 artículo archivado, 2 actualizados con título EN y fechas correctas (24 abr, 8 may)
+
+2. **Post #3 programado en Zernio** (MCP bug workaround — usar REST API directamente):
+   - Bug: `posts_create` MCP falla con `'Platform5' object has no attribute 'lower'` para LinkedIn
+   - Workaround: POST /v1/posts (crea draft) → PUT /v1/posts/{id} con isDraft:false + scheduledFor
+   - Resultado: Post #3 scheduled para 17/04/2026 12:00 UTC (= 9am ART)
+   - Zernio post ID: `69debc75e13608bd119221f2`
+
+3. **Análisis de métricas — Posts #1 y #2 LinkedIn:**
+
+   **Post #1 — "Nadie me pidió que mejorara este proceso"**
+   - Publicado: 26/03/2026 18:30 ART
+   - Impresiones: 1,326 | Alcanzados: 877 | Reacciones: 26 | Comentarios: 7 | Guardado: 2 | Compartido: 2
+   - Nuevos seguidores: 5 | Engagement rate: 2.79%
+   - Audiencia: Internacional (Buenos Aires 19%, Manila 7%, CDMX 3%, Barcelona 3%, NY 2%)
+   - Sectores top: Contabilidad 22%, Servicios financieros 13%, TI/consultoría 8%
+   - Empresas viendo: EY, ExxonMobil, Air Liquide, Genpact, NetSuite
+
+   **Post #2 — "Lo que encontré cuando documenté mi proceso"**
+   - Publicado: 31/03/2026 20:30 ART
+   - Impresiones: 290 | Alcanzados: 179 | Reacciones: 5 | Comentarios: 0 | Guardado: 0 | Compartido: 1
+   - Nuevos seguidores: 0 | Engagement rate: 2.07%
+   - Audiencia: Local (Buenos Aires 32%)
+   - Sectores top: Contabilidad 16%, Servicios financieros 12%, Software 8%
+
+   **Conclusiones estratégicas:**
+   - **Horario**: 18:30 ART >> 20:30 ART. Evitar postear después de las 19:00.
+   - **Tema**: Narrativa personal/provocadora (Post #1) supera a la documental (Post #2) en 4.6x impresiones
+   - **Alcance internacional**: Post #1 llegó a audiencia AP global (BPO Asia, Latam, Europa)
+   - **Audiencia ideal**: AP specialists + finance ops (con experiencia 40-43%), enterprise (10k+ empleados)
+   - **Acción inmediata**: Reprogramar Post #3 de 9am → 18:30 ART (21:30 UTC)
+
+**Estado al cerrar sesión:**
+- Notion: ✅ 7 LinkedIn posts + 2 Substack limpios y con fechas correctas
+- Zernio Post #3: ✅ scheduled 17 abr 12:00 UTC (pendiente evaluar cambio a 18:30 ART)
+- Métricas Posts 1+2: ✅ analizadas y guardadas
+- Pendiente: análisis no estaba siendo guardado automáticamente → protocolo identificado para corrección
+
+**Próximos pasos:**
+- Decidir si reprogramar Post #3 a 18:30 ART
+- Activar protocolo de guardado automático post-/onyx-metrics
+- Publicar Post #3 jueves 17 abr
